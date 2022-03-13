@@ -1,0 +1,211 @@
+/* ORIGINAL CODE FROM https://kastark.co.uk/articles/incrementals.html, MINOR MODIFICATIONS MADE */
+
+/* Mobile/Universal */
+html{
+    background-color: black;
+    color: lightblue;
+}
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+body{
+    font-family:verdana,sans-serif;
+    font-size:14px;
+}
+h1{
+    font-size:400%;
+    font-family:'Fredericka the Great',arial-black,verdana,sans-serif;
+    font-weight:normal;
+    text-transform:lowercase;
+}
+h2{
+    line-height:160%;
+    font-size:160%;
+    font-family:'Fredericka the Great',arial-black,verdana,sans-serif;
+    font-weight:normal;
+    text-transform:lowercase;
+    margin-bottom:0.714em; /* 100 / 140 */
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+p{
+    margin-bottom:1em;
+}
+
+img{
+    max-width:100%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+*:first-child+html .clearfix { zoom: 1; } /* IE7 hack */
+
+/* Header */
+#preHeader{
+    padding:0.5em 2em;
+    margin:0.5em 0;
+    font-size:80%;
+    height:2.1em;
+}
+#preHeader a{
+    margin:0 0.5em;
+    display:inline;
+}
+#skip{
+    float:left;
+    color:lightblue;
+}
+#superLinks{
+    float:right;
+}
+#siteTitle{
+    padding: 0.1em 0.4em 0.15em 0.4em;
+    margin: 0;
+    text-align:center;
+}
+#titleDash{
+    display:none;
+}
+#subtitle{
+    font-size:75%;
+}
+
+/* Navigation */
+#navigation{
+    list-style:none;
+    margin:1%;
+    padding:0;
+    text-align:center;
+}
+#navigation li{
+    float:left;
+    width:98%;
+    border:1px solid gray;
+    /*padding:0.5em;*/
+    margin:0.5em 1% 0 1%;
+    background-color: #000000;
+}
+#navigation #navActive{
+    background-color: #000000;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    padding:0.5em;
+}
+#navigation .navInactive:hover{
+    background-color: #b18f62;
+    color:#000;
+    text-decoration:underline;
+}
+#contentShortcut{
+    display:none;
+}
+#navigation li a{
+    display:block;
+    width:100%;
+    height:100%;
+    padding:0.5em;
+}
+
+
+/* Footer */
+#footer{
+    border:1px solid black;
+    margin:0 1%;
+    padding:0.5em 1em;
+    width:98%;
+    height:2.1em;
+    background-color:#ffa;
+}
+#footerLinks{
+    float:left;
+    display:inline;
+}
+#footerLinks a{
+    margin-right:1em;
+    color:lightblue;
+}
+#copyright{
+    float:right;
+}
+
+/* Tablet - 768px and above */
+@media (min-width:768px){
+    #siteTitle{
+        text-align:left;
+    }
+    #titleDash{
+        display:inline;
+        font-size:60%;
+    }
+    #titleBreak{
+        display:none;
+    }
+    #subtitle{
+        font-size:100%;
+    }
+    #navigation li{
+        width:48%;
+        margin:1em 1% 0 1%;
+    }
+}
+
+/* Regular Desktop: 980px and above */
+@media (min-width:980px){
+    #container{
+        width:95%;
+        margin: 0 auto;
+    }
+
+    #siteTitle{
+        padding: 0.1em 0.8em 0.15em 0.8em;
+    }
+    #titleDash{
+        display:inline;
+        font-size:100%;
+    }
+
+    /* Navigation*/
+    #navigation li{
+        width:23%;
+        margin:0 1%;
+    }
+
+    /* Content */
+    #content{
+        padding: 2% 0;
+        line-height:140%;
+    }
+
+    /* Footer */
+    #footer{
+        border:1px solid black;
+        margin:0 1%;
+        padding:0.5em 1em;
+        width:98%;
+        height:2.1em;
+    }
+}
+
+/* Large Desktop: 1169px and above:*/
+@media (min-width:1169px){
+    #container{
+        width:90%;
+        margin: 0 auto;
+    }
+    body{
+        font-size:16px;
+    }
+}
